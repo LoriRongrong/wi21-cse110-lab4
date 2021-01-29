@@ -91,6 +91,7 @@ printed out 'How are you?; because as tested in question 15, `true==2` evaluates
 when for each element passed into the for loop, it will first be called on `doSomething()`, and `doSomething()` will call on the `function(x){return x*2}` after do the operation `num+2`. Take `1` as the example, `1` will become 3, and then `doSomething` will return `(1+2)*2`.
 
 ## 21
+
 1,4,3,2
 
-The rationale for the result is that it ```console.log(1)``` and ```console.log(4)``` are on the same stack. The setTimeout() will wait the current stack to clear and then execute. That is why 3 is after 4. Since the code print out 2 has a longer delay, it will be printed out last. 
+The rationale for the result is that it `console.log(1)` and `console.log(4)` are on the same stack. The setTimeout() will wait the current stack to clear and then execute. That is why 3 is after 4. Since the code print out 2 has a longer delay, it will be printed out last.
